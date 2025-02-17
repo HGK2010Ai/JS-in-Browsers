@@ -1,0 +1,39 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 500px;
+}
+header , footer , main{
+    border: 2px solid rebeccapurple;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+header *, footer *, main *{
+    margin: 10px;
+}
+
+header{
+    margin-top: 10px;
+}
+.to-do-li{
+    padding: 20px;
+}
+.to-do-section{
+    padding: 20px;
+    border: 2px solid blue;
+}
+.title{
+    border: 2px solid blue;
+}
+#input1-in-div-main{
+    border: 2px solid blue;
+    margin: 10px;
+}
+#become-red{
+    color: burlywood;
+    background-color: brown;
+    font-size: larger;
+}
