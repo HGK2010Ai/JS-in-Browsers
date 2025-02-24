@@ -37,3 +37,28 @@ header{
     background-color: brown;
     font-size: larger;
 }
+
+footer h3{
+    animation-name: identifier;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+
+@keyframes identifier {
+    0%{
+        font-size: larger;
+    }
+    20%{
+        color: brown;
+        font-size: 50px;
+    }
+    80%{
+        color: yellow;
+        font-size: 30px;
+    }
+    100%{
+        color: black;
+        font-size: larger;
+    }
+}
