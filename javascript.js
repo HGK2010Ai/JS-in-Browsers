@@ -1,4 +1,4 @@
-// // Hi Lets go for new Java sript in broesers:
+// // Hi Lets go for new Java sript in browsers:
 
 // console.log(window.alert("In the name of God"));
 
@@ -19,7 +19,7 @@
 // console.log(inPut);
 
 // stop();
-// Dont load
+// // Dont load
 
 // const timing = setTimeout(() => {
 //     console.log("Alooooo")
@@ -155,7 +155,7 @@
 // const attBlank = document.createAttribute("target");
 // attBlank.value = "_blank";
 
-// const getLink = document.getElementById("link-in-footer");
+// const getLink0 = document.getElementById("link-in-footer");
 // getLink.setAttributeNode(attBlank);
 
 // const attRed = document.createAttribute("class");
@@ -186,7 +186,7 @@
 // //document.querySelector("#footer h3").id = "h3-i-like"
 
 // document.querySelector("#footer h3").className
-// اتربیوت رو دست رسی پیدا می کنیم
+// // اتربیوت رو دست رسی پیدا می کنیم
 // document.querySelector("#footer h3").attributes.removeNamedItem("class")
 // // document.querySelector("#footer h3").attributes.getNamedItem("class").value
 
@@ -223,7 +223,7 @@
 // // حالا که دستکاری المنت ها تموم شد
 // // بریم سراغ موقعیت المنت ها 
 
-// const a = document.querySelector("#h1-id");
+// const all = document.querySelector("#h1-id");
 // a.clientWidth
 // a.clientLeft
 // a.clientTop 
@@ -269,7 +269,7 @@
 // //    document.querySelector("#make-list li span").remove();
 // //};
 
-// HTML یه آن بذاری جلوی ایونت میتونی ببریش توی 
+// // HTML یه آن بذاری جلوی ایونت میتونی ببریش توی 
 
 // function clicking(){
 //     document.querySelector("#make-list li").remove();
@@ -277,3 +277,159 @@
 
 // document.querySelector("#make-list li").addEventListener("click" , clicking);
 
+// const takeUl = document.querySelector("#make-list");
+// const takeLi = document.querySelector("#make-list li");
+// const takeSpan = document.querySelector("#make-list li span");
+
+// takeUl.addEventListener("click" , (e) => {
+//     console.log("Log ul"); 
+//     e.stopPropagation();
+// } , {capture : true , once : true});
+
+// takeLi.addEventListener("click" , () => console.log("Log Li") , {capture : true , once : true});
+// takeSpan.addEventListener("click" , () => console.log("Log Span") , {once : true});
+
+// // Event پراپرتی های پدر همه ایونت ها یا آبجکت ایونت 
+
+// document.querySelector("ul").addEventListener("click" , (e) => console.log(e.target));
+// window.addEventListener("load" , (e) => console.log(e));
+// // گذاشته بشن target  بقیه پراپرتی ها که باید به جای
+// // type: نوع ایونت رو بر میگردونه
+// // target: المنتی که باعث صدا زند این شده رو بر میگردونه یعنی میگه کدوم المنت باعث صدا زدن ایونت شده
+// // currentTarget: المنتی رو بر میگردونه که موجب صدا زده شدن فانکشن بشه
+
+// window.addEventListener( "orientationchange" , () => {
+//     if(window.screen.orientation.type == "landscape-primary"){
+//         document.body.style.backgroundColor = "red"
+//     }else{
+        // document.body.style.backgroundColor = "blue"
+//     }
+// })
+
+// window.addEventListener("scroll" , () => console.log(document.documentElement.scrollTop));
+
+// Personal  EVENT:
+
+// const myEvent = new CustomEvent("myEvent1", {detail: Date.now()});
+
+// document.querySelector("ul").addEventListener("myEvent1", (e) => {
+//     e.target.style.backgroundColor = "red";
+// })
+
+// window.addEventListener("scroll", () => {
+//     if(document.documentElement.scrollTop >= 115){
+//         document.querySelector("ul").dispatchEvent(myEvent);
+//     }
+// })
+
+// document.querySelector("#make-list").addEventListener("contextmenu", (e) => {
+//     console.log(e);
+//     e.preventDefault()
+// });
+// document.querySelector("#make-list").addEventListener("dblclick", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("mousedown", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("mouseup", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("mouseenter", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("mouseleave", (e) => {
+//     console.log(e);
+// });
+// // document.querySelector("#make-list").addEventListener("mousemove", (e) => {
+// //     console.log(e);
+// // });
+// document.querySelector("#make-list").addEventListener("mouseover", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("mouseout", (e) => {
+//     console.log(e);
+// });
+// document.querySelector("#make-list").addEventListener("click", (e) => {
+//     console.log(e.composedPath());
+// });
+// // پراپرتی های دیگه
+// // altKey , controlKey , clientX , clientY , offsetX , offsetY , composedPath();
+
+// document.querySelector("#input1-in-div-main").addEventListener("keydown", (e) =>{
+//     console.log(`keydown: ${e}`);
+// })
+// document.querySelector("#input1-in-div-main").addEventListener("keypress", (e) =>{
+//     console.log(`keypressed: ${e}`);
+// })
+// document.querySelector("#input1-in-div-main").addEventListener("keyup", (e) =>{
+//     console.log(`keyup: ${e}`);
+// })
+// // Key press is just for letters not like shift or alt
+
+// document.querySelector("body").addEventListener("keydown", (e) =>{
+//     let char = e.which || e.charCode || e.keyCode;
+//     console.log(String.fromCharCode(char));
+// })
+// // بقیه پراپرتی ها
+// // code: نوع را بر میگرداند
+// // پراپرتی کد خیلی آسون تره اونارو بریز دور
+// // Key: از کدم بهتره خالص بر میگردونه
+// // repeat: میگه نگهش داشتی یا نه
+// // shiftKey , aktKey , ctrlKey;
+
+// document.querySelector("#input1-in-div-main").addEventListener("input", (e) =>{
+//     console.log("INPUTEH");
+//     console.log(e);
+// })
+// document.querySelector("#input1-in-div-main").addEventListener("beforeinput", (e) =>{
+//     console.log("Before INPUTEH");
+//     console.log(e.target.value);
+// })
+// // data: پراپرتی برای فهمیدن مقدار
+
+// document.querySelector("#input1-in-div-main").addEventListener("beforeinput", (e) =>{
+//         if(e.data == 0){
+//             e.preventDefault();
+//         }
+// })
+// document.querySelector("#input1-in-div-main").addEventListener("focus", (e) =>{
+//     document.getElementById("input1-in-div-main").style.backgroundColor = "red"
+// })
+// document.querySelector("#input1-in-div-main").addEventListener("blur", (e) =>{
+//     document.getElementById("input1-in-div-main").style.backgroundColor = "white"
+// })
+// // relatedTarget: اگه در اولی اشتفاده کنی میگه قبلش روی چی فوکوس کرده بودی
+// // اکه در دومی استفاده کنی میگه بعدش روی چی فوکوس کردی
+
+// document.querySelector("ul li").addEventListener("dragend", (e) =>{
+//         console.log(e)
+// })
+// document.querySelector("ul li").addEventListener("dragstart", (e) =>{
+//         e.dataTransfer.setData("ulTake", e.target.id);
+//         console.log("start");
+// })
+// document.querySelector("#to-do-section").addEventListener("dragover", (e) =>{
+//         console.log("overing");
+//         e.preventDefault();
+// })
+// document.querySelector("#to-do-section").addEventListener("drop", (e) =>{
+//         console.log("droped");
+//         const takeId = e.dataTransfer.getData("ulTake");
+//         e.target.appendChild(document.getElementById(takeId));
+// })
+
+// document.querySelector("#to-do-section").addEventListener("copy", (e) =>{
+//         console.log("cccccc");
+//         e.preventDefault();
+// })
+// document.getElementById("input1-in-div-main").addEventListener("paste", (e) =>{
+//         console.log("ppppppp");
+//         e.preventDefault();
+// })
+
+
+
+// //document.querySelector("ul li").addEventListener("drag", (e) =>{
+// //        console.log(e);
+// //})
