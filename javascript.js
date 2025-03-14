@@ -75,7 +75,7 @@
 
 
 // sessionStorage.clear();
-// // هست فقط اینکه در همون تب فقط در دسترس هست و بعد پاک میشه Loavlstorage در واقع همون sessionStorage 
+// // هست فقط اینکه در همون تب فقط در دسترس هست و بعد پاک میشه Localstorage در واقع همون sessionStorage 
 // // حواست باشه پراپرتی و متود ها هم همونه
 
 // // گرفتن آیدی و کلاس
@@ -167,7 +167,7 @@
 // const getLink = document.getElementById("link-in-footer");
 // getLink.setAttribute("id","become-red");
 
-// const haveLi = document.createElement("li")
+// const haveLi = document.createElement("li");
 // const textOfLi = document.createTextNode("We have 5 span");
 
 // haveLi.appendChild(textOfLi);

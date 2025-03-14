@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#text-div{
+    font-family: "Lalezar", system-ui;
+    font-style: normal;
+    margin-top: 3%;
+    color: rgb(9, 9, 124);
+    text-shadow: 1px 1px 10px rgb(10, 56, 87), 3px 3px 3px rgb(14, 159, 255);
+
+}
+#search-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-form input{
+    width: 40%;
+    max-width: 700px;
+    height: 40px;
+    margin-top: 3%;
+    direction: rtl;
+    text-align: right;
+    z-index: 100;
+    border-radius: 20px;
+    outline: none;
+    padding-right: 10px;
+    border: 3px gray solid;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+#search-form input:focus{
+    border: 3px rgb(11, 37, 92) solid;
+}
+.ul-list{
+    width: 100%;
+    list-style: none;
+    font-family: "Lalezar", system-ui;
+    font-weight: bolder;
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ul-list li{
+    width: 40%;
+    max-width: 700px;
+    text-align: right;
+    margin: 1% 0 1% 0;
+    border: 3px rgb(68, 68, 68) solid;
+    border-radius: 10px;
+    padding: 5PX;
+    transition: 1s ease;
+    color: rgb(100, 63, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+.ul-list li:hover{
+    border: 3px chocolate solid;
+}
+.botton-delete{
+    width: 80px;
+    height: 30px;
+    color: red;
+    font-family: "Lalezar", system-ui;
+    background-color: rgb(9, 9, 124);
+    border: 2px gray solid;
+    border-radius: 10px;
+    transition: all 0.15s ease-in;
+}
+.botton-delete:hover{
+    color: aqua;
+    background-color: chocolate;
+}
+.footer{
+    width: 100%;
+}
+#ul-in-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#form-in-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#form-in-footer input{
+    width: 37%;
+    max-width: 700px;
+    margin-top: 2%;
+    height: 40px;
+    direction: rtl;
+    text-align: right;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    padding-right: 1%;
+    border: 3px gray solid;
+}
+#form-in-footer input:focus{
+    border: 3px rgb(11, 37, 92) solid;
+}
+#ul-in-footer button{
+    width: 5%;
+    max-width: 50px;
+    height: 40px;
+    margin-top: 2%;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
