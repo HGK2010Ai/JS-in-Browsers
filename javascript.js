@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // // Hi Lets go for new Java sript in browsers:
 
 // console.log(window.alert("In the name of God"));
@@ -434,9 +433,3 @@
 // //document.querySelector("ul li").addEventListener("drag", (e) =>{
 // //        console.log(e);
 // //})
-=======
-let s = 50;
-
-console.time();
-let a = 20;
->>>>>>> b5a123261d7fa11d47b0820efa9969e60d4a6627
