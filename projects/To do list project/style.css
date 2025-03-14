@@ -76,7 +76,7 @@ body{
     border: 3px rgb(68, 68, 68) solid;
     border-radius: 10px;
     padding: 5PX;
-    transition: 1s ease;
+    transition: 0.5s ease;
     color: rgb(100, 63, 7);
     display: flex;
     justify-content: space-between;
@@ -84,21 +84,22 @@ body{
     direction: rtl;
 }
 .ul-list li:hover{
-    border: 3px chocolate solid;
+    border: 3px rgb(255, 255, 255) solid;
 }
-.botton-delete{
+.button-delete{
     width: 80px;
     height: 30px;
     color: red;
     font-family: "Lalezar", system-ui;
     background-color: rgb(9, 9, 124);
-    border: 2px gray solid;
+    border: none;
     border-radius: 10px;
+    cursor: pointer;
     transition: all 0.15s ease-in;
 }
-.botton-delete:hover{
-    color: aqua;
-    background-color: chocolate;
+.button-delete:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 .footer{
     width: 100%;
@@ -110,14 +111,7 @@ body{
     align-items: center;
     flex-direction: row;
 }
-#form-in-footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-#form-in-footer input{
+#ul-in-footer input{
     width: 37%;
     max-width: 700px;
     margin-top: 2%;
@@ -128,9 +122,10 @@ body{
     border-bottom-left-radius: 20px;
     outline: none;
     padding-right: 1%;
-    border: 3px gray solid;
+    background-color: rgb(0, 0, 0);
+    color: rgb(245, 255, 240);
 }
-#form-in-footer input:focus{
+#ul-in-footer input:focus{
     border: 3px rgb(11, 37, 92) solid;
 }
 #ul-in-footer button{
